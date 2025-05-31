@@ -13,79 +13,79 @@ import { buttonVariants } from "@/components/ui/button";
   <div class="container relative z-10">
     <div class="max-w-3xl mx-auto text-center">
       <div class="inline-flex items-center px-3 py-1 rounded-full bg-muted border border-border text-sm max-w-fit mx-auto mb-6">
-        <span class="text-primary font-medium">Limited Time Offer</span>
+        <span class="text-primary font-medium">عرض لفترة محدودة</span>
       </div>
-      <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Build the Future with AI?</h2>
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">هل أنت مستعد لبناء المستقبل مع الذكاء الاصطناعي؟</h2>
       <p class="text-xl text-foreground/80 mb-8">
-        Join thousands of AI builders today and get 20% off your first month with code <span class="text-primary font-semibold">AIBUILD20</span>
+        انضم إلى آلاف المطورين اليوم واحصل على خصم 20% على الشهر الأول باستخدام الرمز <span class="text-primary font-semibold">AIBUILD20</span>
       </p>
 
       <div class="bg-muted/50 backdrop-blur-sm border border-border rounded-xl p-8 max-w-md mx-auto">
-        <h3 class="text-2xl font-bold mb-6">Join AI Builder Hub</h3>
+        <h3 class="text-2xl font-bold mb-6">انضم إلى بنّاء</h3>
         <form class="space-y-4">
           <div>
-            <label for="email" class="block text-sm font-medium text-foreground mb-1">Email</label>
+            <label for="email" class="block text-sm font-medium text-foreground mb-1 text-right">البريد الإلكتروني</label>
             <input 
               type="email" 
               id="email" 
               placeholder="you@example.com" 
-              class="w-full px-4 py-2 bg-muted border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+              class="w-full px-4 py-2 bg-muted border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary text-right"
               required
             />
           </div>
           <div>
-            <label for="name" class="block text-sm font-medium text-foreground mb-1">Full Name</label>
+            <label for="name" class="block text-sm font-medium text-foreground mb-1 text-right">الاسم الكامل</label>
             <input 
               type="text" 
               id="name" 
-              placeholder="John Doe" 
-              class="w-full px-4 py-2 bg-muted border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+              placeholder="محمد أحمد" 
+              class="w-full px-4 py-2 bg-muted border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary text-right"
               required
             />
           </div>
           <div>
-            <label for="plan" class="block text-sm font-medium text-foreground mb-1">Select Plan</label>
+            <label for="plan" class="block text-sm font-medium text-foreground mb-1 text-right">اختر الخطة</label>
             <select 
               id="plan" 
-              class="w-full px-4 py-2 bg-muted border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+              class="w-full px-4 py-2 bg-muted border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary text-right"
               required
             >
-              <option value="explorer">Explorer - Free</option>
-              <option value="builder" selected>Builder - $29/month</option>
-              <option value="expert">Expert - $99/month</option>
+              <option value="explorer">المستكشف - مجاني</option>
+              <option value="builder" selected>المطور - $29/شهر</option>
+              <option value="expert">الخبير - $99/شهر</option>
             </select>
           </div>
           <div>
-            <label for="promo" class="block text-sm font-medium text-foreground mb-1">Promo Code</label>
+            <label for="promo" class="block text-sm font-medium text-foreground mb-1 text-right">رمز الخصم</label>
             <input 
               type="text" 
               id="promo" 
-              placeholder="Enter promo code" 
+              placeholder="أدخل رمز الخصم" 
               value="AIBUILD20"
-              class="w-full px-4 py-2 bg-muted border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+              class="w-full px-4 py-2 bg-muted border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary text-right"
             />
           </div>
           <button type="submit" class={buttonVariants({ variant: "default", size: "lg", className: "w-full mt-2" })}>
-            Join Now
+            انضم الآن
           </button>
         </form>
         <p class="text-xs text-foreground/60 mt-4">
-          By signing up, you agree to our Terms of Service and Privacy Policy. We'll send you occasional updates about your account and new features.
+          بالتسجيل، فإنك توافق على شروط الخدمة وسياسة الخصوصية. سنرسل لك تحديثات دورية حول حسابك والميزات الجديدة.
         </p>
       </div>
 
       <div class="flex flex-wrap justify-center gap-6 mt-12">
-        <div class="flex items-center space-x-2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path></svg>
-          <span class="text-sm">Secure payment</span>
+        <div class="flex items-center space-x-0 space-x-reverse">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent ml-2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path></svg>
+          <span class="text-sm">دفع آمن</span>
         </div>
-        <div class="flex items-center space-x-2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent"><path d="M21 12a9 9 0 0 1-9 9m9-9a9 9 0 0 0-9-9m9 9H3m9 9a9 9 0 0 1-9-9m9 9c1.66 0 3-8.37 3-9s-1.34-9-3-9m0 18c-1.66 0-3-8.37-3-9s1.34-9 3-9"></path></svg>
-          <span class="text-sm">Global community</span>
+        <div class="flex items-center space-x-0 space-x-reverse">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent ml-2"><path d="M21 12a9 9 0 0 1-9 9m9-9a9 9 0 0 0-9-9m9 9H3m9 9a9 9 0 0 1-9-9m9 9c1.66 0 3-8.37 3-9s-1.34-9-3-9m0 18c-1.66 0-3-8.37-3-9s1.34-9 3-9"></path></svg>
+          <span class="text-sm">مجتمع عالمي</span>
         </div>
-        <div class="flex items-center space-x-2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
-          <span class="text-sm">30-day satisfaction guarantee</span>
+        <div class="flex items-center space-x-0 space-x-reverse">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent ml-2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+          <span class="text-sm">ضمان الرضا لمدة 30 يومًا</span>
         </div>
       </div>
     </div>
