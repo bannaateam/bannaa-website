@@ -1,0 +1,93 @@
+---
+import { buttonVariants } from "@/components/ui/button";
+---
+
+<section id="join" class="py-20 relative overflow-hidden">
+  <!-- Background with glow effect -->
+  <div class="absolute inset-0 -z-10">
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/10 blur-3xl animate-pulse-glow"></div>
+    <div class="absolute top-1/3 right-1/4 w-80 h-80 rounded-full bg-secondary/10 blur-3xl animate-pulse-glow" style="animation-delay: 1.5s;"></div>
+    <div class="absolute bottom-1/4 left-1/3 w-64 h-64 rounded-full bg-accent/10 blur-3xl animate-pulse-glow" style="animation-delay: 3s;"></div>
+  </div>
+
+  <div class="container relative z-10">
+    <div class="max-w-3xl mx-auto text-center">
+      <div class="inline-flex items-center px-3 py-1 rounded-full bg-muted border border-border text-sm max-w-fit mx-auto mb-6">
+        <span class="text-primary font-medium">Limited Time Offer</span>
+      </div>
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Build the Future with AI?</h2>
+      <p class="text-xl text-foreground/80 mb-8">
+        Join thousands of AI builders today and get 20% off your first month with code <span class="text-primary font-semibold">AIBUILD20</span>
+      </p>
+
+      <div class="bg-muted/50 backdrop-blur-sm border border-border rounded-xl p-8 max-w-md mx-auto">
+        <h3 class="text-2xl font-bold mb-6">Join AI Builder Hub</h3>
+        <form class="space-y-4">
+          <div>
+            <label for="email" class="block text-sm font-medium text-foreground mb-1">Email</label>
+            <input 
+              type="email" 
+              id="email" 
+              placeholder="you@example.com" 
+              class="w-full px-4 py-2 bg-muted border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+              required
+            />
+          </div>
+          <div>
+            <label for="name" class="block text-sm font-medium text-foreground mb-1">Full Name</label>
+            <input 
+              type="text" 
+              id="name" 
+              placeholder="John Doe" 
+              class="w-full px-4 py-2 bg-muted border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+              required
+            />
+          </div>
+          <div>
+            <label for="plan" class="block text-sm font-medium text-foreground mb-1">Select Plan</label>
+            <select 
+              id="plan" 
+              class="w-full px-4 py-2 bg-muted border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+              required
+            >
+              <option value="explorer">Explorer - Free</option>
+              <option value="builder" selected>Builder - $29/month</option>
+              <option value="expert">Expert - $99/month</option>
+            </select>
+          </div>
+          <div>
+            <label for="promo" class="block text-sm font-medium text-foreground mb-1">Promo Code</label>
+            <input 
+              type="text" 
+              id="promo" 
+              placeholder="Enter promo code" 
+              value="AIBUILD20"
+              class="w-full px-4 py-2 bg-muted border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+            />
+          </div>
+          <button type="submit" class={buttonVariants({ variant: "default", size: "lg", className: "w-full mt-2" })}>
+            Join Now
+          </button>
+        </form>
+        <p class="text-xs text-foreground/60 mt-4">
+          By signing up, you agree to our Terms of Service and Privacy Policy. We'll send you occasional updates about your account and new features.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-6 mt-12">
+        <div class="flex items-center space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path></svg>
+          <span class="text-sm">Secure payment</span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent"><path d="M21 12a9 9 0 0 1-9 9m9-9a9 9 0 0 0-9-9m9 9H3m9 9a9 9 0 0 1-9-9m9 9c1.66 0 3-8.37 3-9s-1.34-9-3-9m0 18c-1.66 0-3-8.37-3-9s1.34-9 3-9"></path></svg>
+          <span class="text-sm">Global community</span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+          <span class="text-sm">30-day satisfaction guarantee</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

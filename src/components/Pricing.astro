@@ -1,0 +1,151 @@
+---
+import { buttonVariants } from "@/components/ui/button";
+---
+
+<section id="pricing" class="py-20 bg-muted/30">
+  <div class="container">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Simple, Transparent Pricing</h2>
+      <p class="text-foreground/70 max-w-2xl mx-auto">
+        Choose the plan that's right for you and start your journey to becoming a top AI builder.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      <!-- Free Plan -->
+      <div class="bg-muted/50 backdrop-blur-sm border border-border rounded-xl overflow-hidden transition-all duration-300 hover:border-border/80 hover:shadow-lg">
+        <div class="p-6 border-b border-border">
+          <h3 class="text-xl font-semibold mb-2">Explorer</h3>
+          <div class="flex items-baseline mb-4">
+            <span class="text-4xl font-bold">$0</span>
+            <span class="text-foreground/70 ml-2">/month</span>
+          </div>
+          <p class="text-foreground/70 text-sm">
+            Get started with basic AI building tools and community access.
+          </p>
+        </div>
+        <div class="p-6">
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 mr-2"><path d="M20 6 9 17l-5-5"></path></svg>
+              <span class="text-sm">Community forum access</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 mr-2"><path d="M20 6 9 17l-5-5"></path></svg>
+              <span class="text-sm">3 basic tutorials per month</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 mr-2"><path d="M20 6 9 17l-5-5"></path></svg>
+              <span class="text-sm">Public project collaborations</span>
+            </li>
+            <li class="flex items-start opacity-50">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 mr-2"><path d="M18 6 6 18"></path><path d="M6 6l12 12"></path></svg>
+              <span class="text-sm">Advanced AI tools</span>
+            </li>
+            <li class="flex items-start opacity-50">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 mr-2"><path d="M18 6 6 18"></path><path d="M6 6l12 12"></path></svg>
+              <span class="text-sm">Premium courses</span>
+            </li>
+          </ul>
+          <a href="#join" class={buttonVariants({ variant: "outline", size: "lg", className: "w-full" })}>
+            Get Started
+          </a>
+        </div>
+      </div>
+
+      <!-- Pro Plan -->
+      <div class="bg-muted/50 backdrop-blur-sm border-2 border-primary rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 scale-105 relative">
+        <div class="absolute top-0 right-0">
+          <div class="bg-primary text-primary-foreground text-xs font-semibold py-1 px-3 rounded-bl-lg">
+            MOST POPULAR
+          </div>
+        </div>
+        <div class="p-6 border-b border-border">
+          <h3 class="text-xl font-semibold mb-2">Builder</h3>
+          <div class="flex items-baseline mb-4">
+            <span class="text-4xl font-bold">$29</span>
+            <span class="text-foreground/70 ml-2">/month</span>
+          </div>
+          <p class="text-foreground/70 text-sm">
+            Everything you need to become a proficient AI builder.
+          </p>
+        </div>
+        <div class="p-6">
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 mr-2"><path d="M20 6 9 17l-5-5"></path></svg>
+              <span class="text-sm">All Explorer features</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 mr-2"><path d="M20 6 9 17l-5-5"></path></svg>
+              <span class="text-sm">Unlimited access to all courses</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 mr-2"><path d="M20 6 9 17l-5-5"></path></svg>
+              <span class="text-sm">Weekly live coding sessions</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 mr-2"><path d="M20 6 9 17l-5-5"></path></svg>
+              <span class="text-sm">Private Discord community</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 mr-2"><path d="M20 6 9 17l-5-5"></path></svg>
+              <span class="text-sm">AI tool early access</span>
+            </li>
+          </ul>
+          <a href="#join" class={buttonVariants({ variant: "default", size: "lg", className: "w-full" })}>
+            Join Now
+          </a>
+        </div>
+      </div>
+
+      <!-- Enterprise Plan -->
+      <div class="bg-muted/50 backdrop-blur-sm border border-border rounded-xl overflow-hidden transition-all duration-300 hover:border-border/80 hover:shadow-lg">
+        <div class="p-6 border-b border-border">
+          <h3 class="text-xl font-semibold mb-2">Expert</h3>
+          <div class="flex items-baseline mb-4">
+            <span class="text-4xl font-bold">$99</span>
+            <span class="text-foreground/70 ml-2">/month</span>
+          </div>
+          <p class="text-foreground/70 text-sm">
+            For serious AI professionals looking to master advanced techniques.
+          </p>
+        </div>
+        <div class="p-6">
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 mr-2"><path d="M20 6 9 17l-5-5"></path></svg>
+              <span class="text-sm">All Builder features</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 mr-2"><path d="M20 6 9 17l-5-5"></path></svg>
+              <span class="text-sm">1-on-1 mentorship sessions</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 mr-2"><path d="M20 6 9 17l-5-5"></path></svg>
+              <span class="text-sm">Advanced workshop access</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 mr-2"><path d="M20 6 9 17l-5-5"></path></svg>
+              <span class="text-sm">Job board priority listing</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 mr-2"><path d="M20 6 9 17l-5-5"></path></svg>
+              <span class="text-sm">Custom model deployment help</span>
+            </li>
+          </ul>
+          <a href="#join" class={buttonVariants({ variant: "outline", size: "lg", className: "w-full" })}>
+            Upgrade to Expert
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 text-center">
+      <p class="text-foreground/70 mb-4">Need a custom solution for your team or organization?</p>
+      <a href="#enterprise" class={buttonVariants({ variant: "link", className: "text-primary" })}>
+        Contact us for enterprise pricing →
+      </a>
+    </div>
+  </div>
+</section>
