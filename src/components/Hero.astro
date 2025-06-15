@@ -1,5 +1,7 @@
 ---
 import { buttonVariants } from "@/components/ui/button";
+import { Image } from 'astro:assets';
+import bannaLogo from "../assets/bannaa-2025.png";
 ---
 
 <section class="relative overflow-hidden py-20 md:py-32">
@@ -18,9 +20,14 @@ import { buttonVariants } from "@/components/ui/button";
           <div class="inline-flex items-center px-3 py-1 rounded-full bg-muted border border-border text-sm max-w-fit">
             <span class="text-primary font-medium">كن ضمن أفضل 1% من مطوري الذكاء الاصطناعي</span>
           </div>
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight gradient-text leading-tight">
-            بنّاء
-          </h1>
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 md:w-16 md:h-16 rounded-md overflow-hidden">
+              <Image src={bannaLogo} alt="بنّاء" width={64} height={64} />
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight gradient-text leading-tight">
+              بنّاء
+            </h1>
+          </div>
           <p class="text-xl text-foreground/80 max-w-xl">
             انضم إلى مجتمع حصري من بناة الذكاء الاصطناعي والمهندسين والمتحمسين.
             تعلم وابني وانمو معًا مع موارد وأدوات متميزة.
