@@ -1,7 +1,5 @@
 ---
 import { buttonVariants } from "@/components/ui/button";
-import { Image } from 'astro:assets';
-import bannaLogo from "../assets/bannaa-2025.png";
 ---
 
 <header
@@ -11,10 +9,7 @@ import bannaLogo from "../assets/bannaa-2025.png";
     class="container flex h-16 items-center space-x-0 space-x-reverse sm:justify-between"
   >
     <div class="flex gap-6 md:gap-10">
-      <a href="/" class="flex items-center space-x-2 space-x-reverse">
-        <div class="w-8 h-8 rounded-md overflow-hidden">
-          <Image src={bannaLogo} alt="بنّاء" width={32} height={32} />
-        </div>
+      <a href="/" class="flex items-center space-x-0 space-x-reverse">
         <span class="inline-block font-display font-bold text-2xl gradient-text">بنّاء</span>
       </a>
     </div>
