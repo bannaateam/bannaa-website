@@ -5,185 +5,115 @@ import { buttonVariants } from "@/components/ui/button";
 <section id="pricing" class="py-20 bg-muted/30">
   <div class="container">
     <div class="text-center mb-8">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">أسعار بسيطة وشفافة</h2>
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">اشترك الآن</h2>
       <p class="text-foreground/70 max-w-2xl mx-auto">
-        اختر الخطة المناسبة لك وابدأ رحلتك لتصبح من أفضل مطوري الذكاء الاصطناعي.
+        احصل على وصول كامل إلى منصة بنّاء وابدأ رحلتك في عالم الذكاء الاصطناعي.
       </p>
     </div>
     
-    <div class="flex justify-center items-center mb-12">
-      <div class="flex items-center p-1 bg-muted rounded-full border border-border">
-        <button
-          id="monthlyPricingBtn"
-          class="px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium text-sm"
-        >
-          شهري
-        </button>
-        <button
-          id="yearlyPricingBtn"
-          class="px-6 py-2 rounded-full text-foreground/70 font-medium text-sm"
-        >
-          سنوي
-          <span class="inline-block mr-1 py-0.5 px-2 bg-accent/20 text-accent text-xs rounded-full">خصم 20%</span>
-        </button>
-      </div>
-    </div>
-
-    <div id="pricingPlans" class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-      <!-- Free Plan -->
-      <div class="bg-muted/50 backdrop-blur-sm border border-border rounded-xl overflow-hidden transition-all duration-300 hover:border-border/80 hover:shadow-lg">
-        <div class="p-6 border-b border-border">
-          <h3 class="text-xl font-semibold mb-2">المستكشف</h3>
-          <div class="flex items-baseline mb-4">
-            <div class="monthly-price block">
-              <span class="text-4xl font-bold">$0</span>
-              <span class="text-foreground/70 mr-2">/شهر</span>
-            </div>
-            <div class="yearly-price hidden">
-              <span class="text-4xl font-bold">$0</span>
-              <span class="text-foreground/70 mr-2">/سنة</span>
-            </div>
-          </div>
-          <p class="text-foreground/70 text-sm">
-            ابدأ مع أدوات بناء الذكاء الاصطناعي الأساسية والوصول إلى المجتمع.
-          </p>
-        </div>
-        <div class="p-6">
-          <ul class="space-y-3 mb-6">
-            <li class="flex items-start">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 ml-2"><path d="M20 6 9 17l-5-5"></path></svg>
-              <span class="text-sm">الوصول إلى منتدى المجتمع</span>
-            </li>
-            <li class="flex items-start">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 ml-2"><path d="M20 6 9 17l-5-5"></path></svg>
-              <span class="text-sm">3 دروس أساسية شهريًا</span>
-            </li>
-            <li class="flex items-start">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 ml-2"><path d="M20 6 9 17l-5-5"></path></svg>
-              <span class="text-sm">تعاون في المشاريع العامة</span>
-            </li>
-            <li class="flex items-start opacity-50">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 ml-2"><path d="M18 6 6 18"></path><path d="M6 6l12 12"></path></svg>
-              <span class="text-sm">أدوات الذكاء الاصطناعي المتقدمة</span>
-            </li>
-            <li class="flex items-start opacity-50">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 ml-2"><path d="M18 6 6 18"></path><path d="M6 6l12 12"></path></svg>
-              <span class="text-sm">الدورات المتميزة</span>
-            </li>
-          </ul>
-          <a href="#join" class={buttonVariants({ variant: "outline", size: "lg", className: "w-full" })}>
-            ابدأ الآن
-          </a>
-        </div>
-      </div>
-
-      <!-- Pro Plan -->
-      <div class="bg-muted/50 backdrop-blur-sm border-2 border-primary rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 scale-105 relative">
+    <div class="max-w-xl mx-auto">
+      <div class="bg-muted/50 backdrop-blur-sm border-2 border-primary rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 relative">
         <div class="absolute top-0 left-0">
           <div class="bg-primary text-primary-foreground text-xs font-semibold py-1 px-3 rounded-br-lg">
-            الأكثر شعبية
+            اشتراك ممتاز
           </div>
         </div>
-        <div class="p-6 border-b border-border">
-          <h3 class="text-xl font-semibold mb-2">المطور</h3>
-          <div class="flex items-baseline mb-4">
-            <div class="monthly-price block">
-              <span class="text-4xl font-bold">$29</span>
+        
+        <div class="p-8 border-b border-border">
+          <h3 class="text-2xl font-semibold mb-4">باقة بنّاء الشاملة</h3>
+          
+          <div class="flex justify-center items-center mb-6">
+            <div class="flex items-center p-1 bg-muted rounded-full border border-border">
+              <button
+                id="monthlyPricingBtn"
+                class="px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium text-sm"
+              >
+                اشتراك شهري
+              </button>
+              <button
+                id="yearlyPricingBtn"
+                class="px-6 py-2 rounded-full text-foreground/70 font-medium text-sm"
+              >
+                اشتراك سنوي
+                <span class="inline-block mr-1 py-0.5 px-2 bg-accent/20 text-accent text-xs rounded-full">خصم 20%</span>
+              </button>
+            </div>
+          </div>
+          
+          <div class="flex justify-center items-baseline mb-6">
+            <div class="monthly-price block text-center">
+              <span class="text-5xl font-bold">$29</span>
               <span class="text-foreground/70 mr-2">/شهر</span>
             </div>
-            <div class="yearly-price hidden">
-              <span class="text-4xl font-bold">$279</span>
+            <div class="yearly-price hidden text-center">
+              <span class="text-5xl font-bold">$279</span>
               <span class="text-foreground/70 mr-2">/سنة</span>
-              <span class="line-through text-foreground/50 text-sm">$348</span>
+              <div class="mt-1">
+                <span class="line-through text-foreground/50 text-sm">$348</span>
+                <span class="text-accent text-sm mr-2">توفير $69</span>
+              </div>
             </div>
           </div>
-          <p class="text-foreground/70 text-sm">
-            كل ما تحتاجه لتصبح مطور ذكاء اصطناعي متمكن.
+          
+          <a href="#" class={buttonVariants({ variant: "default", size: "lg", className: "w-full mb-4" })}>
+            اشترك الآن
+          </a>
+          
+          <p class="text-xs text-center text-foreground/60">
+            اشترك بدون مخاطر. يمكنك الإلغاء في أي وقت مع ضمان استرداد الأموال لمدة 30 يومًا.
           </p>
         </div>
-        <div class="p-6">
+        
+        <div class="p-8">
+          <h4 class="font-semibold mb-4 text-lg">كل ما تحتاجه للنجاح في عالم الذكاء الاصطناعي:</h4>
+          
           <ul class="space-y-3 mb-6">
             <li class="flex items-start">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 ml-2"><path d="M20 6 9 17l-5-5"></path></svg>
-              <span class="text-sm">جميع ميزات خطة المستكشف</span>
+              <span class="text-sm">وصول غير محدود لجميع الدورات والمحتوى التعليمي</span>
             </li>
             <li class="flex items-start">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 ml-2"><path d="M20 6 9 17l-5-5"></path></svg>
-              <span class="text-sm">وصول غير محدود لجميع الدورات</span>
+              <span class="text-sm">جلسات برمجة أسبوعية مباشرة مع خبراء الذكاء الاصطناعي</span>
             </li>
             <li class="flex items-start">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 ml-2"><path d="M20 6 9 17l-5-5"></path></svg>
-              <span class="text-sm">جلسات برمجة أسبوعية مباشرة</span>
+              <span class="text-sm">مجتمع ديسكورد حصري للمشتركين</span>
             </li>
             <li class="flex items-start">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 ml-2"><path d="M20 6 9 17l-5-5"></path></svg>
-              <span class="text-sm">مجتمع ديسكورد خاص</span>
+              <span class="text-sm">وصول مبكر لأدوات الذكاء الاصطناعي والميزات الجديدة</span>
             </li>
             <li class="flex items-start">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 ml-2"><path d="M20 6 9 17l-5-5"></path></svg>
-              <span class="text-sm">وصول مبكر لأدوات الذكاء الاصطناعي</span>
+              <span class="text-sm">مشاريع عملية وتحديات أسبوعية</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 ml-2"><path d="M20 6 9 17l-5-5"></path></svg>
+              <span class="text-sm">شهادات إتمام معتمدة</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 ml-2"><path d="M20 6 9 17l-5-5"></path></svg>
+              <span class="text-sm">فرص عمل حصرية ولوحة وظائف</span>
             </li>
           </ul>
-          <a href="#join" class={buttonVariants({ variant: "default", size: "lg", className: "w-full" })}>
-            انضم الآن
-          </a>
-        </div>
-      </div>
-
-      <!-- Expert Plan -->
-      <div class="bg-muted/50 backdrop-blur-sm border border-border rounded-xl overflow-hidden transition-all duration-300 hover:border-border/80 hover:shadow-lg">
-        <div class="p-6 border-b border-border">
-          <h3 class="text-xl font-semibold mb-2">الخبير</h3>
-          <div class="flex items-baseline mb-4">
-            <div class="monthly-price block">
-              <span class="text-4xl font-bold">$99</span>
-              <span class="text-foreground/70 mr-2">/شهر</span>
+          
+          <div class="flex flex-wrap justify-center gap-6 mt-8">
+            <div class="flex items-center space-x-0 space-x-reverse">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent ml-2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path></svg>
+              <span class="text-sm">دفع آمن</span>
             </div>
-            <div class="yearly-price hidden">
-              <span class="text-4xl font-bold">$950</span>
-              <span class="text-foreground/70 mr-2">/سنة</span>
-              <span class="line-through text-foreground/50 text-sm">$1188</span>
+            <div class="flex items-center space-x-0 space-x-reverse">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent ml-2"><path d="M21 12a9 9 0 0 1-9 9m9-9a9 9 0 0 0-9-9m9 9H3m9 9a9 9 0 0 1-9-9m9 9c1.66 0 3-8.37 3-9s-1.34-9-3-9m0 18c-1.66 0-3-8.37-3-9s1.34-9 3-9"></path></svg>
+              <span class="text-sm">مجتمع عالمي</span>
+            </div>
+            <div class="flex items-center space-x-0 space-x-reverse">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent ml-2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+              <span class="text-sm">ضمان الرضا لمدة 30 يومًا</span>
             </div>
           </div>
-          <p class="text-foreground/70 text-sm">
-            للمحترفين الجادين في مجال الذكاء الاصطناعي الراغبين في إتقان التقنيات المتقدمة.
-          </p>
-        </div>
-        <div class="p-6">
-          <ul class="space-y-3 mb-6">
-            <li class="flex items-start">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 ml-2"><path d="M20 6 9 17l-5-5"></path></svg>
-              <span class="text-sm">جميع ميزات خطة المطور</span>
-            </li>
-            <li class="flex items-start">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 ml-2"><path d="M20 6 9 17l-5-5"></path></svg>
-              <span class="text-sm">جلسات توجيه فردية</span>
-            </li>
-            <li class="flex items-start">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 ml-2"><path d="M20 6 9 17l-5-5"></path></svg>
-              <span class="text-sm">وصول إلى ورش العمل المتقدمة</span>
-            </li>
-            <li class="flex items-start">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 ml-2"><path d="M20 6 9 17l-5-5"></path></svg>
-              <span class="text-sm">أولوية في لوحة الوظائف</span>
-            </li>
-            <li class="flex items-start">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 ml-2"><path d="M20 6 9 17l-5-5"></path></svg>
-              <span class="text-sm">مساعدة في نشر النماذج المخصصة</span>
-            </li>
-          </ul>
-          <a href="#join" class={buttonVariants({ variant: "outline", size: "lg", className: "w-full" })}>
-            الترقية إلى الخبير
-          </a>
         </div>
       </div>
-    </div>
-
-    <div class="mt-12 text-center">
-      <p class="text-foreground/70 mb-4">هل تحتاج إلى حل مخصص لفريقك أو مؤسستك؟</p>
-      <a href="#enterprise" class={buttonVariants({ variant: "link", className: "text-primary" })}>
-        تواصل معنا للحصول على أسعار المؤسسات ←
-      </a>
     </div>
   </div>
 </section>

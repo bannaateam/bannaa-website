@@ -13,65 +13,20 @@ import { buttonVariants } from "@/components/ui/button";
   <div class="container relative z-10">
     <div class="max-w-3xl mx-auto text-center">
       <div class="inline-flex items-center px-3 py-1 rounded-full bg-muted border border-border text-sm max-w-fit mx-auto mb-6">
-        <span class="text-primary font-medium">عرض لفترة محدودة</span>
+        <span class="text-primary font-medium">انضم إلى المجتمع المتنامي</span>
       </div>
       <h2 class="text-4xl md:text-5xl font-bold mb-6">هل أنت مستعد لبناء المستقبل مع الذكاء الاصطناعي؟</h2>
-      <p class="text-xl text-foreground/80 mb-8">
-        انضم إلى آلاف المطورين اليوم واحصل على خصم 20% على الشهر الأول باستخدام الرمز <span class="text-primary font-semibold">AIBUILD20</span>
+      <p class="text-xl text-foreground/80 mb-10 max-w-2xl mx-auto">
+        انضم إلى آلاف المطورين اليوم وكن جزءًا من مجتمع بنّاء المتميز. ابدأ رحلتك في عالم الذكاء الاصطناعي الآن.
       </p>
 
-      <div class="bg-muted/50 backdrop-blur-sm border border-border rounded-xl p-8 max-w-md mx-auto">
-        <h3 class="text-2xl font-bold mb-6">انضم إلى بنّاء</h3>
-        <form class="space-y-4">
-          <div>
-            <label for="email" class="block text-sm font-medium text-foreground mb-1 text-right">البريد الإلكتروني</label>
-            <input 
-              type="email" 
-              id="email" 
-              placeholder="you@example.com" 
-              class="w-full px-4 py-2 bg-muted border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary text-right"
-              required
-            />
-          </div>
-          <div>
-            <label for="name" class="block text-sm font-medium text-foreground mb-1 text-right">الاسم الكامل</label>
-            <input 
-              type="text" 
-              id="name" 
-              placeholder="محمد أحمد" 
-              class="w-full px-4 py-2 bg-muted border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary text-right"
-              required
-            />
-          </div>
-          <div>
-            <label for="plan" class="block text-sm font-medium text-foreground mb-1 text-right">اختر الخطة</label>
-            <select 
-              id="plan" 
-              class="w-full px-4 py-2 bg-muted border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary text-right"
-              required
-            >
-              <option value="explorer">المستكشف - مجاني</option>
-              <option value="builder" selected>المطور - $29/شهر</option>
-              <option value="expert">الخبير - $99/شهر</option>
-            </select>
-          </div>
-          <div>
-            <label for="promo" class="block text-sm font-medium text-foreground mb-1 text-right">رمز الخصم</label>
-            <input 
-              type="text" 
-              id="promo" 
-              placeholder="أدخل رمز الخصم" 
-              value="AIBUILD20"
-              class="w-full px-4 py-2 bg-muted border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary text-right"
-            />
-          </div>
-          <button type="submit" class={buttonVariants({ variant: "default", size: "lg", className: "w-full mt-2" })}>
-            انضم الآن
-          </button>
-        </form>
-        <p class="text-xs text-foreground/60 mt-4">
-          بالتسجيل، فإنك توافق على شروط الخدمة وسياسة الخصوصية. سنرسل لك تحديثات دورية حول حسابك والميزات الجديدة.
-        </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#pricing" class={buttonVariants({ variant: "default", size: "lg" })}>
+          اشترك الآن
+        </a>
+        <a href="#" class={buttonVariants({ variant: "outline", size: "lg" })}>
+          تواصل معنا
+        </a>
       </div>
 
       <div class="flex flex-wrap justify-center gap-6 mt-12">
