@@ -4,21 +4,45 @@ import { buttonVariants } from "@/components/ui/button";
 
 <section id="pricing" class="py-20 bg-muted/30">
   <div class="container">
-    <div class="text-center mb-16">
+    <div class="text-center mb-8">
       <h2 class="text-3xl md:text-4xl font-bold mb-4">أسعار بسيطة وشفافة</h2>
       <p class="text-foreground/70 max-w-2xl mx-auto">
         اختر الخطة المناسبة لك وابدأ رحلتك لتصبح من أفضل مطوري الذكاء الاصطناعي.
       </p>
     </div>
+    
+    <div class="flex justify-center items-center mb-12">
+      <div class="flex items-center p-1 bg-muted rounded-full border border-border">
+        <button
+          id="monthlyPricingBtn"
+          class="px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium text-sm"
+        >
+          شهري
+        </button>
+        <button
+          id="yearlyPricingBtn"
+          class="px-6 py-2 rounded-full text-foreground/70 font-medium text-sm"
+        >
+          سنوي
+          <span class="inline-block mr-1 py-0.5 px-2 bg-accent/20 text-accent text-xs rounded-full">خصم 20%</span>
+        </button>
+      </div>
+    </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+    <div id="pricingPlans" class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
       <!-- Free Plan -->
       <div class="bg-muted/50 backdrop-blur-sm border border-border rounded-xl overflow-hidden transition-all duration-300 hover:border-border/80 hover:shadow-lg">
         <div class="p-6 border-b border-border">
           <h3 class="text-xl font-semibold mb-2">المستكشف</h3>
           <div class="flex items-baseline mb-4">
-            <span class="text-4xl font-bold">$0</span>
-            <span class="text-foreground/70 mr-2">/شهر</span>
+            <div class="monthly-price block">
+              <span class="text-4xl font-bold">$0</span>
+              <span class="text-foreground/70 mr-2">/شهر</span>
+            </div>
+            <div class="yearly-price hidden">
+              <span class="text-4xl font-bold">$0</span>
+              <span class="text-foreground/70 mr-2">/سنة</span>
+            </div>
           </div>
           <p class="text-foreground/70 text-sm">
             ابدأ مع أدوات بناء الذكاء الاصطناعي الأساسية والوصول إلى المجتمع.
@@ -63,8 +87,15 @@ import { buttonVariants } from "@/components/ui/button";
         <div class="p-6 border-b border-border">
           <h3 class="text-xl font-semibold mb-2">المطور</h3>
           <div class="flex items-baseline mb-4">
-            <span class="text-4xl font-bold">$29</span>
-            <span class="text-foreground/70 mr-2">/شهر</span>
+            <div class="monthly-price block">
+              <span class="text-4xl font-bold">$29</span>
+              <span class="text-foreground/70 mr-2">/شهر</span>
+            </div>
+            <div class="yearly-price hidden">
+              <span class="text-4xl font-bold">$279</span>
+              <span class="text-foreground/70 mr-2">/سنة</span>
+              <span class="line-through text-foreground/50 text-sm">$348</span>
+            </div>
           </div>
           <p class="text-foreground/70 text-sm">
             كل ما تحتاجه لتصبح مطور ذكاء اصطناعي متمكن.
@@ -104,8 +135,15 @@ import { buttonVariants } from "@/components/ui/button";
         <div class="p-6 border-b border-border">
           <h3 class="text-xl font-semibold mb-2">الخبير</h3>
           <div class="flex items-baseline mb-4">
-            <span class="text-4xl font-bold">$99</span>
-            <span class="text-foreground/70 mr-2">/شهر</span>
+            <div class="monthly-price block">
+              <span class="text-4xl font-bold">$99</span>
+              <span class="text-foreground/70 mr-2">/شهر</span>
+            </div>
+            <div class="yearly-price hidden">
+              <span class="text-4xl font-bold">$950</span>
+              <span class="text-foreground/70 mr-2">/سنة</span>
+              <span class="line-through text-foreground/50 text-sm">$1188</span>
+            </div>
           </div>
           <p class="text-foreground/70 text-sm">
             للمحترفين الجادين في مجال الذكاء الاصطناعي الراغبين في إتقان التقنيات المتقدمة.
@@ -149,3 +187,40 @@ import { buttonVariants } from "@/components/ui/button";
     </div>
   </div>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const monthlyBtn = document.getElementById('monthlyPricingBtn');
+    const yearlyBtn = document.getElementById('yearlyPricingBtn');
+    const monthlyPrices = document.querySelectorAll('.monthly-price');
+    const yearlyPrices = document.querySelectorAll('.yearly-price');
+
+    monthlyBtn.addEventListener('click', () => {
+      // Update button styles
+      monthlyBtn.classList.add('bg-primary', 'text-primary-foreground');
+      monthlyBtn.classList.remove('text-foreground/70');
+      yearlyBtn.classList.remove('bg-primary', 'text-primary-foreground');
+      yearlyBtn.classList.add('text-foreground/70');
+      
+      // Show monthly prices, hide yearly prices
+      monthlyPrices.forEach(price => price.classList.remove('hidden'));
+      monthlyPrices.forEach(price => price.classList.add('block'));
+      yearlyPrices.forEach(price => price.classList.add('hidden'));
+      yearlyPrices.forEach(price => price.classList.remove('block'));
+    });
+
+    yearlyBtn.addEventListener('click', () => {
+      // Update button styles
+      yearlyBtn.classList.add('bg-primary', 'text-primary-foreground');
+      yearlyBtn.classList.remove('text-foreground/70');
+      monthlyBtn.classList.remove('bg-primary', 'text-primary-foreground');
+      monthlyBtn.classList.add('text-foreground/70');
+      
+      // Show yearly prices, hide monthly prices
+      yearlyPrices.forEach(price => price.classList.remove('hidden'));
+      yearlyPrices.forEach(price => price.classList.add('block'));
+      monthlyPrices.forEach(price => price.classList.add('hidden'));
+      monthlyPrices.forEach(price => price.classList.remove('block'));
+    });
+  });
+</script>
